@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duong Nguyen Portfolio</title>
+  <meta name="description" content="Portfolio of Duong Nguyen, PhD student in Applied Linguistics and Technology at Iowa State University: publications, conference presentations, service and skills.">
+  <meta name="author" content="Duong Nguyen">
+  <meta name="theme-color" content="#C8102E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Duong Nguyen Portfolio">
+  <meta property="og:description" content="PhD student in Applied Linguistics and Technology at Iowa State University. Corpus linguistics, language assessment, and AI in L2 writing.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    /* Apply the saved theme and palette before first paint (no color flash). */
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        var p = localStorage.getItem("portfolio-palette");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        if (p && p !== "cardinal") document.documentElement.setAttribute("data-palette", p);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/></svg>
+      </span>
+      <span class="brand-name">Duong Nguyen<span class="dot">.</span></span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#presentations">Presentations</a>
+      <a href="#service">Service</a>
+      <a href="#skills">Skills</a>
+      <a href="assets/cv.pdf" download="Duong-Nguyen-CV.pdf" data-download-cv>Download CV</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="palette">
+        <button class="palette-toggle" type="button" aria-label="Choose color theme" aria-expanded="false" aria-controls="palette-menu" data-palette-toggle>
+          <span class="swatch-dot" aria-hidden="true"></span>
+        </button>
+        <div class="palette-menu" id="palette-menu" role="group" aria-label="Color theme" hidden>
+          <p class="palette-title">Iowa State colors</p>
+          <button type="button" data-palette-option="cardinal" aria-pressed="true"><span class="sw sw-cardinal" aria-hidden="true"></span>Cardinal</button>
+          <button type="button" data-palette-option="gold" aria-pressed="false"><span class="sw sw-gold" aria-hidden="true"></span>Gold</button>
+          <button type="button" data-palette-option="olive" aria-pressed="false"><span class="sw sw-olive" aria-hidden="true"></span>Olive</button>
+          <button type="button" data-palette-option="stone" aria-pressed="false"><span class="sw sw-stone" aria-hidden="true"></span>Stone</button>
+        </div>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="cta-pill" href="mailto:duongn@iastate.edu">
+        <span class="status-dot" aria-hidden="true"></span> Get in touch
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <p class="eyebrow">PhD Student · Iowa State University</p>
+        <h1 class="hero-title">Duong<br>Nguyen<em>.</em></h1>
+        <div class="tags" aria-label="Research areas">
+          <span class="tag">#Corpus Linguistics</span>
+          <span class="tag">#Language Assessment</span>
+          <span class="tag">#AI &amp; L2 Writing</span>
+        </div>
+        <p class="hero-intro">Applied linguistics researcher studying corpus methods, language assessment, and AI-generated feedback in second-language writing.</p>
+        <a class="btn-outline" href="assets/cv.pdf" download="Duong-Nguyen-CV.pdf" data-download-cv>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          Download CV (PDF)
+        </a>
+        <a class="circle-cta" href="mailto:duongn@iastate.edu">
+          <span class="circle-label">Start a conversation</span>
+          <span class="circle-name">Email<br>Duong</span>
+          <span class="circle-arrow" aria-hidden="true">&#8599;</span>
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="oval-ring">
+          <!-- To use a photo: save it as assets/photo.jpg and replace this div with
+               <img class="oval-photo" src="assets/photo.jpg" alt="Portrait of Duong Nguyen"> -->
+          <div class="oval-photo" role="img" aria-label="Duong Nguyen monogram">
+            <span class="monogram">DN</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-stats" aria-label="Highlights">
+        <div class="stat">
+          <p class="stat-label">Years Teaching</p>
+          <p class="stat-value">10</p>
+        </div>
+        <div class="stat">
+          <p class="stat-label">Publications</p>
+          <p class="stat-value">7</p>
+        </div>
+        <div class="stat">
+          <p class="stat-label">Presentations</p>
+          <p class="stat-value">11</p>
+        </div>
+        <div class="stat">
+          <p class="stat-label">Awards &amp; Fellowships</p>
+          <p class="stat-value">8</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <header class="section-head">
+        <p class="eyebrow">01</p>
+        <h2>About</h2>
+      </header>
+      <div class="about-grid">
+        <p class="lead">I am a PhD student in Applied Linguistics and Technology at Iowa State University, researching how learners develop L2 writing and how technology, from corpora to generative AI, can support that development.</p>
+        <div>
+          <p>My research focuses on corpus linguistics, language assessment, L2 writing development, and AI-generated feedback. I bring a background in teaching English in Vietnam and the United States, and I have designed and taught courses on public speaking and online language teaching.</p>
+          <h3 class="sub-heading">Experience</h3>
+          <ul class="plain-list">
+            <li><strong>Research Assistant</strong>, Iowa State University, English Department (2024–present)</li>
+            <li><strong>Graduate Teaching Assistant</strong>, Speech Communication 2120, Iowa State University (2023–2026)</li>
+            <li><strong>Teacher, Global Online Course</strong>, Using Educational Technology in the English Language Classroom (2023–2024)</li>
+            <li><strong>Head English Teacher</strong>, Quang Nam Academy International Bilingual School, Vietnam (2020–2021)</li>
+            <li><strong>English Teacher</strong>, Nguyen Binh Khiem High School for the Gifted, Vietnam (2016–2020)</li>
+          </ul>
+          <h3 class="sub-heading">Grants &amp; Awards</h3>
+          <ul class="plain-list">
+            <li>Graduate College Emerging Leader Academy, Iowa State University (2024–2025)</li>
+            <li>Freda Huncke Endowment Graduate Teaching Fellowship (2023)</li>
+            <li>Janet Anderson-Hsieh Scholarship (2023)</li>
+            <li>COLA Fellowship, Graduate School, Michigan State University (2022)</li>
+            <li>LATTICE Fellowship (2022)</li>
+            <li>Fulbright Vietnamese Student Scholarship (2021–2022)</li>
+            <li>Third Prize, Scientific Research Conference (2019)</li>
+            <li>Second Prize, Student Research Competition, University of Education, Ho Chi Minh City (2016)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <header class="section-head">
+        <p class="eyebrow">02</p>
+        <h2>Education</h2>
+      </header>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <p class="timeline-date">2023 – present</p>
+          <div>
+            <h3>PhD in Applied Linguistics and Technology</h3>
+            <p class="timeline-org">Iowa State University</p>
+            <p>Research focus: corpus linguistics, language assessment, L2 writing development, and AI-generated feedback. Coursework includes test development, validity in language assessment, and quantitative and qualitative research methods.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-date">2023</p>
+          <div>
+            <h3>M.A. in Teaching English to Speakers of Other Languages</h3>
+            <p class="timeline-org">Michigan State University</p>
+            <p>Thesis: <em>(How) Do Secondary School EFL Writers Benefit from Corpus-based Collocation Learning?</em></p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-date">2016</p>
+          <div>
+            <h3>B.A. in Teaching English as a Foreign Language</h3>
+            <p class="timeline-org">Ho Chi Minh City University of Education</p>
+            <p>Action research: applying cooperative learning to improve high school students' speaking skills.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <header class="section-head">
+        <p class="eyebrow">03</p>
+        <h2>Publications</h2>
+      </header>
+      <ol class="entry-list">
+        <li class="entry">
+          <p class="entry-year">2026</p>
+          <div>
+            <h3>Comparing the use of linking adverbials in academic writing by L1 and L2 English student writers: A corpus-based study</h3>
+            <p class="entry-meta">Journal of English for Academic Purposes, 83, 101736</p>
+            <p class="entry-links"><a href="https://doi.org/10.1016/j.jeap.2026.101736">DOI</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2026</p>
+          <div>
+            <h3>A Review of Pearson's Versant English Speaking and Listening Test (VESLT)</h3>
+            <p class="entry-meta">Ockey, G. J., Chapelle, C., et al. · Language Assessment Quarterly, 23(1), 89–103</p>
+            <p class="entry-links"><a href="https://doi.org/10.1080/15434303.2025.2608742">DOI</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2026</p>
+          <div>
+            <h3>Dependency parsing in computational linguistics</h3>
+            <p class="entry-meta">Pham, Q. H. P., Chau, C. C., &amp; Nguyen, D. · AL Forum (TESOL newsletter)</p>
+            <p class="entry-links"><a href="https://my.tesol.org/news/11527010">Link</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Review of <em>Learner language, discourse and interaction: A corpus-based analysis of spoken English</em></h3>
+            <p class="entry-meta">Lestari, F., &amp; Nguyen, D. · Register Studies</p>
+            <p class="entry-links"><a href="https://doi.org/10.1075/rs.25013.les">DOI</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Review of <em>Corpora for language learning: Bridging the research-practice divide</em></h3>
+            <p class="entry-meta">Nguyen, D. · System, 134</p>
+            <p class="entry-links"><a href="https://doi.org/10.1016/j.system.2025.103825">DOI</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Review of <em>Conducting genre-based research in applied linguistics: A methodological guide</em></h3>
+            <p class="entry-meta">Hakim, A., et al. · Journal of Second Language Writing, 68, 101192</p>
+            <p class="entry-links"><a href="https://doi.org/10.1016/j.jslw.2025.101192">DOI</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">In press</p>
+          <div>
+            <h3>Drowning in concordance sheets and teaching myself corpus linguistics: (When) is it okay to ask for help?</h3>
+            <p class="entry-meta">In C. Cinaglia &amp; M. D. Coss (Eds.), <em>The Story Behind the Study</em>. Applied Linguistics Press</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONFERENCE PRESENTATIONS -->
+    <section class="section" id="presentations">
+      <header class="section-head">
+        <p class="eyebrow">04</p>
+        <h2>Conference Presentations</h2>
+      </header>
+      <ol class="entry-list">
+        <li class="entry">
+          <p class="entry-year">2026</p>
+          <div>
+            <h3>Evaluating rater effects of human and large language models in L2 writing</h3>
+            <p class="entry-meta">Nguyen, D., &amp; Truong, M. · VietTESOL International Convention, Danang, Vietnam · Paper</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2026</p>
+          <div>
+            <h3>Prompting strategies for ChatGPT: Effects on feedback quality in L2 writing performance</h3>
+            <p class="entry-meta">Nguyen, D. · AAAL Conference, Chicago, IL · Poster</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>A critical evaluation of GenAI as a research assistant: Three case studies from corpus linguistics</h3>
+            <p class="entry-meta">Danis, N., et al. · TSLL Conference, Ames, IA · Paper</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Using language to establish "friend" and "mentor" personas: How well do GenAI chatbots do?</h3>
+            <p class="entry-meta">Lestari, F., Nguyen, D., et al. · TSLL Conference, Ames, IA · Poster</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Enhancing EFL students' writing through ChatGPT: Utilizing effective prompts for feedback and revisions</h3>
+            <p class="entry-meta">Nguyen, D., &amp; Ho, T. · TSLL Conference, Ames, IA · Paper</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Zero-shot and engineered prompts for ChatGPT-generated feedback in L2 writing</h3>
+            <p class="entry-meta">Nguyen, D. · TSLL Conference, Ames, IA · Paper</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>Business English writing test: A validation study on the utilization inference</h3>
+            <p class="entry-meta">Nguyen, D. · LARC Conference, Fullerton, CA · Work in progress</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2025</p>
+          <div>
+            <h3>How do L1 and L2 English student writers use linking adverbials in academic writing: A corpus-based study</h3>
+            <p class="entry-meta">Nguyen, D. · AAAL Conference, Denver, CO · Poster</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2024</p>
+          <div>
+            <h3>Exploring the efficacy of ChatGPT integration on EFL writing: A study with Vietnamese undergraduate students</h3>
+            <p class="entry-meta">Nguyen, D., &amp; Ho, T. · TSLL Conference, Ames, IA · Paper</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2024</p>
+          <div>
+            <h3>(How) Do secondary school EFL writers benefit from corpus-based collocation learning? A study of usage, outcome, and perceptions</h3>
+            <p class="entry-meta">Nguyen, D. · AACL Conference, Eugene, OR · Paper</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry-year">2024</p>
+          <div>
+            <h3>Usage, perceptions, and efficacy of corpus-based collocation learning for secondary school EFL writers</h3>
+            <p class="entry-meta">Nguyen, D. · AAAL Conference, Houston, TX · Poster</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="section" id="service">
+      <header class="section-head">
+        <p class="eyebrow">05</p>
+        <h2>Service</h2>
+      </header>
+      <div class="cards">
+        <article class="card">
+          <h3>Assistant Editor</h3>
+          <p class="entry-meta">ISU Digital Press · Jan – Jun 2025</p>
+          <p>Open book <em>Researching Generative AI in Applied Linguistics</em>. Coordinated peer review for 13 chapters and handled APA 7th compliance and final production.</p>
+        </article>
+        <article class="card">
+          <h3>Manuscript Reviewer</h3>
+          <p class="entry-meta">2024 – 2025</p>
+          <p>Language Learning and Technology (3 manuscripts, 2025), TESOL Quarterly (1, 2024), TSLL Open Book (5, 2024).</p>
+        </article>
+        <article class="card">
+          <h3>Abstract Reviewer</h3>
+          <p class="entry-meta">2024 – 2026</p>
+          <p>LARC 2025 (5 proposals), VietTESOL 2025–2026 (33 abstracts), TSLL 2024–2025 (review coordination).</p>
+        </article>
+        <article class="card">
+          <h3>ILTA GSA Chair</h3>
+          <p class="entry-meta">2026 – 2027</p>
+          <p>Hosts monthly business meetings for ILTA GSA members, sets agendas, and meets the ILTA Chair for bi-monthly mentorship.</p>
+        </article>
+        <article class="card">
+          <h3>Steering &amp; Committees</h3>
+          <p class="entry-meta">2023 – 2026</p>
+          <p>ILTA GSA Steering Member and Communications Chair (2024–2025); TSLL Conference Organizing Committee, designing the program book (2023–2025); LASO/LARG Secretary and Brown Bag Committee (2024–2026).</p>
+        </article>
+        <article class="card">
+          <h3>Peer Mentor</h3>
+          <p class="entry-meta">2023 – 2024</p>
+          <p>Supported four cohorts of an 8-week global online course on EdTech in the English language classroom, sponsored by the U.S. Department of State (OPEN program).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <header class="section-head">
+        <p class="eyebrow">06</p>
+        <h2>Skills</h2>
+      </header>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Data Analysis &amp; Collection</h3>
+          <ul class="chips">
+            <li>SPSS</li><li>AMOS</li><li>MAXQDA</li><li>R Studio</li><li>Qualtrics</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Corpora &amp; Text Tools</h3>
+          <ul class="chips">
+            <li>COCA</li><li>BNC</li><li>Sketch Engine</li><li>CorpusMate</li><li>AntConc</li><li>TagAnt</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Educational Technology</h3>
+          <ul class="chips">
+            <li>H5P</li><li>PlayPosit</li><li>Padlet</li><li>Zoom</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>LMS &amp; Web</h3>
+          <ul class="chips">
+            <li>D2L</li><li>Canvas</li><li>WordPress</li><li>Google Sites</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Productivity &amp; Design</h3>
+          <ul class="chips">
+            <li>Microsoft Office</li><li>Google Workspace</li><li>Canva</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-tag">Corpus linguistics, language assessment, and AI in L2 writing. <span class="footer-email">duongn@iastate.edu</span></p>
+    <span class="footer-rule" aria-hidden="true"></span>
+    <ul class="socials">
+      <li><a href="mailto:duongn@iastate.edu" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
+    </ul>
+  </footer>
+  <p class="toast" role="status" aria-live="polite" hidden data-toast></p>
+</body>
+</html>
